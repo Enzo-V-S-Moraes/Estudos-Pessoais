@@ -1,7 +1,7 @@
 /**
  * file: typeAnnotation.ts
- * description: Resposable for teaching the basic concepts about 'Type Annotations'
- * File Transpilation: <Windows> CTRL + SHIFT + B -> tsc: build/watch 
+ * description: Responsable for teaching the basic concepts about 'Type Annotations'
+ * file Transpilation: <Windows> CTRL + SHIFT + B -> tsc: build/watch 
  */
 
 // => Variables [Type Annotations]
@@ -19,4 +19,12 @@ let car: {
     price: number;
 };
 
-car = {name: 'Terzo Millennio', year: 2017, price: 100.000}
+car = {name: 'Terzo Millennio', year: 2017, price: 100000}
+console.log(car);
+
+// => Functions [Type Annotation]
+function multiplyNumber(num1: number, num2: number){
+    return num1 * num2;
+}
+
+console.log(multiplyNumber(2,5));
